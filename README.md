@@ -2,7 +2,21 @@
 
 ## Usage
 
+### Install
+
     git clone https://github.com/ninetails/feijoada-starter-kit.git --branch master --single-branch --depth 1
+
+### Run webpack-dev-server
+
+    npm start
+
+### Generate .js and .css files
+
+    npm run build
+
+### Run Karma
+
+    npm test
 
 ## Features
 
