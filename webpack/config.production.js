@@ -1,9 +1,6 @@
-var path = require('path');
-var util = require('util');
 var webpack = require('webpack');
 var assign = require('object-assign');
 var ExtractTextPlugin = require('extract-text-webpack-plugin');
-var pkgConfig = require('../package.json').config;
 var config = require('./config.js');
 
 var webpackEntries = config.entry;
