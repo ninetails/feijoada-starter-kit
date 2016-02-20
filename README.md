@@ -6,9 +6,6 @@
 
 * [webpack](https://webpack.github.io/)
 * [webpack-dev-server](https://webpack.github.io/docs/webpack-dev-server.html)
-
-#### To implement
-
 * [Karma](https://karma-runner.github.io/)
 
 ### HTML
@@ -19,9 +16,6 @@
 
 * [Babel](https://babeljs.io/)
   * Presets: ES6 & Stage 0
-
-#### Preparing to implement
-
 * [eslint](http://eslint.org/)
 
 ### CSS
