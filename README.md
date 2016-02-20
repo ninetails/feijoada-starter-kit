@@ -24,6 +24,7 @@
 
 * [webpack](https://webpack.github.io/)
 * [webpack-dev-server](https://webpack.github.io/docs/webpack-dev-server.html)
+* [Browsersync](https://www.browsersync.io/)
 * [Karma](https://karma-runner.github.io/)
 
 ### HTML

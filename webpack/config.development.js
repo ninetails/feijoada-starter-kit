@@ -1,11 +1,13 @@
 var path = require('path');
 var util = require('util');
+var BrowserSyncPlugin = require('browser-sync-webpack-plugin');
 var assign = require('object-assign');
 var pkgConfig = require('../package.json').config;
 var config = require('./config.js');
 
 var webpackModule = config.module;
 var webpackEntries = config.entry;
+var webpackPlugins = config.plugins;
 
 webpackEntries.push('./src/index.jade');
 webpackEntries.push('./src/index.styl');
@@ -27,6 +29,19 @@ webpackModule.loaders.push(
 webpackModule.loaders.push(
   { test: /\.jade$/, loader: 'file?name=[name].html!jade-html', exclude: /node_modules/ }
 );
+
+webpackPlugins.push(new BrowserSyncPlugin({
+  host: pkgConfig.bsServerHost,
+  port: pkgConfig.bsServerPort,
+  server: {
+    proxy: util.format(
+      'http://%s:%s/',
+      pkgConfig.devServerHost,
+      pkgConfig.devServerPort
+    ),
+    reload: false
+  }
+}));
 
 module.exports = assign(config, {
   debug: true,

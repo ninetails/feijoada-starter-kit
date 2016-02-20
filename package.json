@@ -23,7 +23,9 @@
   "config": {
     "buildDir": "build",
     "devServerHost": "localhost",
-    "devServerPort": "8000"
+    "devServerPort": "8000",
+    "bsServerHost": "localhost",
+    "bsServerPort": "3000"
   },
   "babel": {
     "presets": [
@@ -49,6 +51,8 @@
     "babel-preset-es2015": "^6.5.0",
     "babel-preset-stage-0": "^6.5.0",
     "babel-register": "^6.5.2",
+    "browser-sync": "^2.11.1",
+    "browser-sync-webpack-plugin": "^1.0.1",
     "chai": "^3.5.0",
     "css-loader": "^0.23.1",
     "eslint": "^2.2.0",
