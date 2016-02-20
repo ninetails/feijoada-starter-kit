@@ -33,14 +33,13 @@ webpackModule.loaders.push(
 webpackPlugins.push(new BrowserSyncPlugin({
   host: pkgConfig.bsServerHost,
   port: pkgConfig.bsServerPort,
-  server: {
-    proxy: util.format(
-      'http://%s:%s/',
-      pkgConfig.devServerHost,
-      pkgConfig.devServerPort
-    ),
-    reload: false
-  }
+  proxy: util.format(
+    'http://%s:%s/',
+    pkgConfig.devServerHost,
+    pkgConfig.devServerPort
+  ),
+  reload: false,
+  open: false
 }));
 
 module.exports = assign(config, {
