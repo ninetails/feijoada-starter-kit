@@ -1,5 +1,9 @@
 # Feijoada Boilerplate
 
+## Usage
+
+    git clone https://github.com/ninetails/feijoada-starter-kit.git --branch master --single-branch --depth 1
+
 ## Features
 
 ### Workflow
